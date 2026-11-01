@@ -523,7 +523,8 @@
       position: relative;
       width: min(400px, 72vw);
       height: 440px;
-      touch-action: pan-y
+      touch-action: pan-y;
+      isolation: isolate
     }
 
     .card {
@@ -1224,7 +1225,9 @@
 
       .about-photo {
         height: min(105vw, 560px);
-        order: 2
+        order: 2;
+        width: 100%;
+        margin: 0
       }
 
       .about-copy {
@@ -1351,7 +1354,9 @@
 
       .about-photo {
         height: 125vw;
-        max-height: 520px
+        max-height: 520px;
+        width: 100%;
+        margin: 0
       }
 
       .menu-top,
@@ -1385,8 +1390,14 @@
       }
 
       .gallery-stage {
-        height: 410px;
+        height: 450px;
         margin-top: 22px
+      }
+
+      .gallery-controls {
+        position: relative;
+        z-index: 2;
+        margin-top: 30px
       }
 
       .deck {
